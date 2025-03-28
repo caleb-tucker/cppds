@@ -196,7 +196,7 @@ main()
 
             <choice correct="yes">
                 <statement>
-                    <p>[11, 7, 12, 14, 8, 1, 6, 18, 19, 20]</p>
+                    <p>[1, 6, 7, 14, 19, 11, 12, 18, 8, 20]</p>
                 </statement>
                 <feedback>
                     <p>Selection sort improves upon bubble sort by making fewer swaps.</p>
