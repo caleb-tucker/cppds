@@ -449,6 +449,9 @@ equivalent to ``operator.add(2,2)``.
 .. sourcecode:: cpp
 
 
+    #include <string>
+    #include <sstream>
+
     class Operator {
         public:
             int add(int x, int y){

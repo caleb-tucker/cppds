@@ -195,21 +195,21 @@ and end at the same square.
         :iscode:
         :feedback: Remember, the base case is usually the first comparison in the function!
 
-        :click-incorrect:def knightTour(n,path,u,limit)::endclick:
+        :click-incorrect:def knightTour(n,path,u,limit):endclick:
         :click-incorrect:u.setColor('gray'):endclick:
         :click-incorrect:path.append(u):endclick:
-        :click-correct:if n < limit::endclick:
+        :click-incorrect:if n < limit:endclick:
             :click-incorrect:nbrList = list(u.getConnections()):endclick:
             :click-incorrect:i = 0:endclick:
             :click-incorrect:done = False:endclick:
-            :click-incorrect:while i < len(nbrList) and not done::endclick:
-                :click-incorrect:if nbrList[i].getColor() == 'white'::endclick:
+            :click-incorrect:while i < len(nbrList) and not done:endclick:
+                :click-incorrect:if nbrList[i].getColor() == 'white':endclick:
                     :click-incorrect:done = knightTour(n+1, path, nbrList[i], limit):endclick:
                 :click-incorrect:i = i + 1:endclick:
             :click-incorrect:if not done:  # prepare to backtrack:endclick:
                 :click-incorrect:path.pop():endclick:
                 :click-incorrect:u.setColor('white'):endclick:
-        :click-incorrect:else::endclick:
-            :click-incorrect:done = True:endclick:
+        :click-incorrect:else:endclick:
+            :click-correct:done = True:endclick:
         :click-incorrect:return done:endclick:
 
