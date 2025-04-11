@@ -41,7 +41,7 @@ in :ref:`Figure 1 <fig_knightmoves>`.
             for (int col = 0; col < bdSize; col++) {
                 int nodeId = coordToNum(row, col, bdSize);
                 vector<int> newPositions = genLegalMoves(nodeId, bdSize);
-                for (int i = 0; i < newPositions.size(); i++) {
+                for (std::vector<int>::size_type i = 0; i < newPositions.size(); i++) {
                     int newId = newPositions[i];
                     ktGraph.addEdge(nodeId, newId);
                 }
@@ -359,7 +359,7 @@ two locations. In the next chapter, we will implement a different algorithm call
             for (int col = 0; col < bdSize; col++) {
                 int nodeId = coordToNum(row, col, bdSize);
                 vector<int> newPositions = genLegalMoves(nodeId, bdSize);
-                for (int i = 0; i < newPositions.size(); i++) {
+                for (std::vector<int>::size_type i = 0; i < newPositions.size(); i++) {
                     int newId = newPositions[i];
                     ktGraph.addEdge(nodeId, newId);
                 }
