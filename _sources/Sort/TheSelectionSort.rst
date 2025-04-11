@@ -150,7 +150,7 @@ typically executes faster in benchmark studies.
       :answer_a: [7, 11, 12, 1, 6, 14, 8, 18, 19, 20]
       :answer_b: [7, 11, 12, 14, 19, 1, 6, 18, 8, 20]
       :answer_c: [11, 7, 12, 14, 1, 6, 8, 18, 19, 20]
-      :answer_d: [11, 7, 12, 14, 8, 1, 6, 18, 19, 20]
+      :answer_d: [1, 6, 7, 14, 19, 11, 12, 18, 8, 20]
       :feedback_a: Selection sort is similar to bubble sort (which you appear to have done) but uses fewer swaps
       :feedback_b: This looks like an insertion sort.
       :feedback_c: This one looks similar to the correct answer, however, it is not how selection sort works. With this answer, instead of swapping values through each sweep, the values have been shifted to the left to make room for the correct numbers.
