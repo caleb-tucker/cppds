@@ -185,22 +185,22 @@ def knightTour(n,path,u,limit):
     <statement><p>What line denotes the base case of the Knight's Tour function?</p></statement>
 <feedback><p>Remember, the base case is usually the first comparison in the function!</p></feedback>
 <areas>
-<cline><area>def knightTour(n,path,u,limit):</area>:</cline>
+<cline><area>def knightTour(n,path,u,limit)</area>:</cline>
 <cline><area>u.setColor('gray')</area>:</cline>
 <cline><area>path.append(u)</area>:</cline>
-<cline><area correct="yes">if n &lt; limit:</area>:</cline>
+<cline><area>if n &lt; limit</area>:</cline>
 <cline>    <area>nbrList = list(u.getConnections())</area>:</cline>
 <cline>    <area>i = 0</area>:</cline>
 <cline>    <area>done = False</area>:</cline>
-<cline>    <area>while i &lt; len(nbrList) and not done:</area>:</cline>
-<cline>        <area>if nbrList[i].getColor() == 'white':</area>:</cline>
+<cline>    <area>while i &lt; len(nbrList) and not done</area>:</cline>
+<cline>        <area>if nbrList[i].getColor() == 'white'</area>:</cline>
 <cline>            <area>done = knightTour(n+1, path, nbrList[i], limit)</area>:</cline>
 <cline>        <area>i = i + 1</area>:</cline>
 <cline>    <area>if not done:  # prepare to backtrack</area>:</cline>
 <cline>        <area>path.pop()</area>:</cline>
 <cline>        <area>u.setColor('white')</area>:</cline>
-<cline><area>else:</area>:</cline>
-<cline>    <area>done = True</area>:</cline>
+<cline><area>else</area>:</cline>
+<cline>    <area correct="yes">done = True</area>:</cline>
 <cline><area>return done</area>:</cline>
 </areas></exercise>        </reading-questions>  
       
