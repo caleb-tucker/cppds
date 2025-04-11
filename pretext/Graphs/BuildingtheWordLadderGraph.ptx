@@ -178,7 +178,7 @@ public:
               return verts;
       }
 
-      friend ostream &amp;operator&lt;&lt;(ostream &amp;, Graph &amp;;
+      friend ostream &amp;operator&lt;&lt;(ostream &amp;, Graph &amp;);
 };
 
 ostream &amp;operator&lt;&lt;(ostream &amp;stream, Graph &amp;grph) {
