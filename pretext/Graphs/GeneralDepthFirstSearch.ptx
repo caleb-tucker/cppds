@@ -134,9 +134,9 @@ int main(int argc, char** argv){
     </program>
             </TabNode><TabNode tabname="Python" tabnode_options="{'subchapter': 'GeneralDepthFirstSearch', 'chapter': 'Graphs', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
 
-    <program xml:id="pythondfs0" interactive="activecode" language="python3">
-        <input>
-from pythonds.graphs import Graph
+    <term>Listing 1</term>
+    <listing xml:id="pythondfs0" names="pythondfs0"><term>Listing 1</term>
+    <pre>from pythonds.graphs import Graph
 
 class DFSGraph(Graph):
     def __init__(self):
@@ -183,9 +183,8 @@ def main():
 
     graph.dfs()
 
-main()
-        </input>
-    </program>
+main()</pre>
+    </listing>
             </TabNode>
         <p>Although our implementation of <c>bfs</c> was only interested in
             considering nodes for which there was a path leading back to the start,
