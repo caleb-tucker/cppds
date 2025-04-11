@@ -413,6 +413,9 @@ main()
         
         <p xml:id="trees_lst-eval" names="lst_eval"><term>Listing 1</term></p>
         <program language="cpp"><input>
+#include <string>
+#include <sstream>
+
 class Operator {
     public:
         int add(int x, int y){
